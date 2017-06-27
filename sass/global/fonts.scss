@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "Gagalin";
+	src: url(../fonts/Gagalin.woff2),
+	url(../fonts/Gagalin.woff);
+}
+
+@font-face {
+	font-family: "lobster";
+	src: url(../fonts/lobster.woff2),
+	url(../fonts/lobster.woff);
+}
+
+@font-face {
+	font-family: "Boomboom";
+	src: url(../fonts/boomboom.woff2),
+	url(../fonts/boomboom.woff);
+}
+
+$gaga: "Gagalin", "Comic Sans MS", cursive;
+$lob: "lobster", "Arial", sans-serif;
+$boom: "Boomboom", "Arial", sans-serif;
