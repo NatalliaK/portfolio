@@ -1,0 +1,43 @@
+@keyframes opacity {
+	from {
+		opacity: 0.9;
+	}
+
+	80% {
+		opacity: 0.2;
+		background-color: #feff90;
+	}
+
+	50% {
+		opacity: 0.4;
+		background-color: #bad6ff;
+	}
+
+	20% {
+		opacity: 0.7;
+		background-color: #14264a;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes type{
+	from {
+		width: 0;
+		visibility: visible;
+	}
+}
+
+@keyframes flash{
+	to {
+		opacity: 0.5;
+	}
+}

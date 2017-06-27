@@ -1,0 +1,56 @@
+.preload-wrap {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+
+	background-color: black;
+	opacity: 0;
+
+	animation: opacity 6s 1 ease-in;
+}
+
+.preload,
+.preload::after,
+.preload::before {
+	border-color: transparent;
+	border-radius: 50%;
+}
+
+.preload {
+	position: absolute;
+	top: 24em;
+	left: 40vw;
+	width: 50px;
+	height: 50px;
+
+	border-top: 4px solid #00ffae;
+
+	animation: spin 0.7s infinite linear;
+
+	&::before {
+		position: absolute;
+		content: "";
+		top: 4px;
+		left:4px;
+		right: 4px;
+		bottom: 4px;
+		border-top: 3px solid royalblue;
+	 	animation: spin 0.7s infinite linear;
+		 animation-delay: 0.2s;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: 7px;
+		left: 7px;
+		right: 7px;
+		bottom: 7px;
+		border-top: 4px solid red;
+		animation: spin 0.7s infinite linear;
+		animation-delay: 0.4s;
+	}
+}

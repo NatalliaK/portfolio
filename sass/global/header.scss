@@ -1,0 +1,58 @@
+.header {
+	position: relative;
+
+	width: 100%;
+	height: 100vh;
+
+	opacity: 1;
+
+	background-image: url("../img/gray-mob@1x.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom right -170px;
+}
+
+.header__title1 {
+	padding: 6.7em 0 2em;
+
+	color: #002080;
+	font-size: 2em;
+	width: 100%;
+	font-family: $gaga;
+	white-space: nowrap;
+	overflow: hidden;
+	text-align: center;
+	text-shadow: 0 0 4px #e2e2e2;
+
+	animation: type 6s steps(30, end);
+}
+
+.header__title2 {
+	padding-right: 10%;
+
+	font-size: 1.2em;
+	font-family: $lob;
+	text-align: right;
+	line-height: 1.7em;
+	color: #000c2f;
+}
+
+.header__span {
+	display: block;
+
+	font-size: 1.3em;
+	font-family: $boom;
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+	.header {
+		background-image: url("../img/gray-mob@2x.jpg");
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		background-image: url("../img/gray-tab@1x.jpg");
+	}
+}
