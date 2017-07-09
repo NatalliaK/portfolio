@@ -1,0 +1,29 @@
+@mixin pad {
+	padding-right: 20px;
+	padding-left: 20px;
+
+	@media (min-width: $tab) {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+
+	@media (min-width: $deck) {
+		padding-right: 120px;
+		padding-left: 120px;
+	}
+}
+
+@mixin marg {
+	margin-right: 20px;
+	margin-left: 20px;
+
+	@media (min-width: $tab) {
+		margin-right: 40px;
+		margin-left: 40px;
+	}
+
+	@media (min-width: $deck) {
+		margin-right: 120px;
+		margin-left: 120px;
+	}
+}

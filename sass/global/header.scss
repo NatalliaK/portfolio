@@ -1,5 +1,6 @@
 .header {
 	position: relative;
+	z-index: 3;
 
 	width: 100%;
 	height: 100vh;
@@ -15,7 +16,7 @@
 .header__title1 {
 	padding: 6.7em 0 2em;
 
-	color: #002080;
+	color: $blue;
 	font-size: 2em;
 	width: 100%;
 	font-family: $gaga;

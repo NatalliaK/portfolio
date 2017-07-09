@@ -1,0 +1,71 @@
+.work-natali {
+	padding-top: 4em;
+	background-color: lavender;
+}
+
+.work-natali__title2 {
+	font-family: $gaga;
+	color: #000031;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.work-natali__title3 {
+	padding: 1.5rem;
+	@include pad;
+
+	font-family: $lob;
+	font-size: 1.3em;
+	color: $blue;
+	text-decoration: underline;
+}
+
+.work-natali__use {
+	padding-bottom: 1.5em;
+	@include pad;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.work-natali__use-span {
+	width: 4em;
+	height: 2.5em;
+
+	background-color: #878787;
+
+	font-family: $anahit;
+	font-size: 0.7em;
+	line-height: 3em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #e6e6e6, 0px 2px 0px 0px #767676, 0px 5px 5px #999999;
+}
+
+.work-natali__img-wrap {
+	padding: 0 20px;
+	height: 100%;
+
+	overflow: hidden;
+}
+
+.work-natali__img {
+	width: 100%;
+
+	transition: all 1s ease-out;
+
+	&:hover {
+		transform: scale(1.5);
+		transform-origin: 7% -15%;
+	}
+}
+
+.work-natali__text {
+	padding: 20px;
+	font-family: $anahit;
+	font-size: 0.8em;
+	text-shadow: 0 1px 1px white;
+}
