@@ -1,0 +1,58 @@
+.about-me {
+	padding-top: 10vh;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-me__photo-wrap {
+	position: relative;
+
+	margin: 0 auto;
+	width: 45vw;
+	height: 62vw;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+	&::after {
+		position: absolute;
+		content: "";
+		z-index: 2;
+		top: 0;
+
+		width: 45vw;
+		height: 62vw;
+
+		box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.6);
+		outline: 1px solid white;
+	}
+}
+
+.about-me__photo {
+	width: 45vw;
+	height: 62vw;
+}
+
+.about-me__wrap {
+	margin: 1em;
+	@include marg;
+}
+
+.about-me__text {
+	padding: 1em 0;
+
+	font-family: $anahit;
+	font-size: 0.8em;
+
+	&--big {
+		font-size: 1.2em;
+		 font-family: $boom;
+	}
+}
+
+.about-me__span {
+	font-family: $lob;
+	font-size: 1.1em;
+	background-color: #d2dbf7;
+	border-radius: 2px;
+}

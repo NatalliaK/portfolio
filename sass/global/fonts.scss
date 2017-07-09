@@ -16,6 +16,13 @@
 	url(../fonts/boomboom.woff);
 }
 
+@font-face {
+	font-family: "AMG Anahit";
+	src: url(../fonts/amganahitsemiserif.woff2),
+	url(../fonts/amganahitsemiserif.woff);
+}
+
 $gaga: "Gagalin", "Comic Sans MS", cursive;
 $lob: "lobster", "Arial", sans-serif;
 $boom: "Boomboom", "Arial", sans-serif;
+$anahit: "AMG Anahit", "Times New Roman", serif;
