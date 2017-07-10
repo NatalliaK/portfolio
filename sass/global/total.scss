@@ -10,3 +10,9 @@ body {
 		font-size: 20px;
 	}
 }
+
+@media (min-width: $tab) {
+	body {
+		font-size: 26px;
+	}
+}
