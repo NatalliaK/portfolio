@@ -47,7 +47,9 @@
 }
 
 .work-natali__img-wrap {
-	padding: 0 20px;
+	padding-top: 0;
+	padding-bottom: 0;
+	@include pad;
 	height: 100%;
 
 	overflow: hidden;
@@ -76,5 +78,15 @@
 @media (min-width: $big-mob) {
 	.work-natali__use-span {
 		width: 6em;
+	}
+}
+
+@media (min-width: $tab) {
+	.work-natali__use-span {
+		width: 7em;
+	}
+
+	.work-natali__title3 {
+		text-align: center;
 	}
 }

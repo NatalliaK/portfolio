@@ -63,3 +63,17 @@
 		padding-top: 12vw;
 	}
 }
+
+@media (min-width: $tab) {
+	.about-me__photo-wrap {
+		max-width: 330px;
+		height: auto;
+	}
+
+	.about-me__text {
+		&--big {
+			padding-bottom: 0.5em;
+			text-align: center;
+		}
+	}
+}
