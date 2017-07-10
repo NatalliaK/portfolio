@@ -2,6 +2,11 @@
 	padding-right: 20px;
 	padding-left: 20px;
 
+	@media (min-width: $big-mob) {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
 	@media (min-width: $tab) {
 		padding-right: 40px;
 		padding-left: 40px;
@@ -16,6 +21,11 @@
 @mixin marg {
 	margin-right: 20px;
 	margin-left: 20px;
+
+	@media (min-width: $big-mob) {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
 
 	@media (min-width: $tab) {
 		margin-right: 40px;

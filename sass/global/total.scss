@@ -2,5 +2,11 @@ body {
 	min-width: 320px;
 
 	font-size: 18px;
-	line-height: 1.5rem;
+	line-height: 1.5em;
+}
+
+@media (min-width: $big-mob) {
+	body {
+		font-size: 20px;
+	}
 }

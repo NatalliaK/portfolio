@@ -74,3 +74,9 @@
 
 	vertical-align: bottom;
 }
+
+@media (min-width: $big-mob) {
+	.contact__contacts-wrap {
+		padding-left: 7%;
+	}
+}

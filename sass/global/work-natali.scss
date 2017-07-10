@@ -11,7 +11,8 @@
 }
 
 .work-natali__title3 {
-	padding: 1.5rem;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
 	@include pad;
 
 	font-family: $lob;
@@ -64,8 +65,16 @@
 }
 
 .work-natali__text {
-	padding: 20px;
+	@include pad;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	font-family: $anahit;
 	font-size: 0.8em;
 	text-shadow: 0 1px 1px white;
+}
+
+@media (min-width: $big-mob) {
+	.work-natali__use-span {
+		width: 6em;
+	}
 }
