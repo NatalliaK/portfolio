@@ -3,6 +3,8 @@
 	z-index: 10;
 
 	width: 100%;
+
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .nav-header__list {
@@ -15,7 +17,6 @@
 
 	font-family: $lob;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.4);
 	text-shadow: 0 1px 0 black, 0 -1px 0 black;
 }
 
@@ -48,5 +49,12 @@
 			opacity: 0;
 			animation: flash 4s ease-out alternate infinite;
 		}
+	}
+}
+
+@media (min-width: $desk) {
+	.nav-header__list {
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 }

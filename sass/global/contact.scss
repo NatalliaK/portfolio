@@ -9,11 +9,11 @@
 }
 
 .contact__text {
+	margin: 0 auto;
 	padding-top: 3.5em;
 	padding-bottom: 1em;
 
 	font-family: $gaga;
-	text-align: center;
 	line-height: 1.5em;
 	color: $dark-blue;
 	text-shadow: 0 1px 1px white;
@@ -70,9 +70,30 @@
 }
 
 .contact__img {
+	width: auto;
 	height: 25vh;
 
 	vertical-align: bottom;
+}
+
+.contact__img-wrap {
+	position: relative;
+	content: "";
+
+	height: 25vh;
+	width: 100%;
+	
+	background-image: url("../img/black-mob@1x.png");
+	background-size: auto 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+	.contact__img-wrap {
+		background-image: url("../img/black-mob@2x.png");
+	}
 }
 
 @media (min-width: $big-mob) {
@@ -92,3 +113,39 @@
 		padding-left: 7%;
 	}
 }
+
+@media (min-width: $tab) {
+	.contact__img-wrap {
+		background-image: url("/img/black-tab@1x.png");
+	}
+
+	@media (min-resolution: 144dpi),
+	(min-resolution: 1.5dppx) {
+		.contact__img-wrap {
+			background-image: url("../img/black-tab@2x.png");
+		}
+	}
+}
+
+	@media (min-width: $desk) {
+		.contact__img-wrap {
+			background-image: url("/img/black-desk@1x.png");
+		}
+
+		.contact__contacts {
+			justify-content: space-around;
+		}
+
+		.contact__svg {
+			&--small {
+				margin-left: 10px;
+			}
+		}
+
+		@media (min-resolution: 144dpi),
+		(min-resolution: 1.5dppx) {
+			.contact__img-wrap {
+				background-image: url("../img/black-desk@2x.png");
+			}
+		}
+	}

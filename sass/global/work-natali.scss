@@ -1,5 +1,6 @@
 .work-natali {
 	padding-top: 4em;
+	@include pad;
 	background-color: lavender;
 }
 
@@ -13,7 +14,6 @@
 .work-natali__title3 {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
-	@include pad;
 
 	font-family: $lob;
 	font-size: 1.3em;
@@ -23,7 +23,6 @@
 
 .work-natali__use {
 	padding-bottom: 1.5em;
-	@include pad;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -49,7 +48,6 @@
 .work-natali__img-wrap {
 	padding-top: 0;
 	padding-bottom: 0;
-	@include pad;
 	height: 100%;
 
 	overflow: hidden;
@@ -67,7 +65,6 @@
 }
 
 .work-natali__text {
-	@include pad;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-family: $anahit;
@@ -88,5 +85,55 @@
 
 	.work-natali__title3 {
 		text-align: center;
+	}
+
+	.work-natali__use {
+		justify-content: space-around;
+	}
+}
+
+
+@media (min-width: $desk) {
+	.work-natali__site {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.work-natali__title3 {
+		flex-basis: 100%;
+		order: 0;
+	}
+
+	.work-natali__img-wrap {
+		padding: 0.5em 0.5em 0 1em;
+
+		flex-basis: 40%;
+		order: 1;
+	}
+
+	.work-natali__text-wrap {
+		padding-left: 1em;
+		padding-top: 0.5em;
+
+		flex: 1 1 50%;
+		order: 2;
+	}
+
+	.work-natali__text {
+		padding-top: 0;
+	}
+
+	.work-natali__use {
+		margin-left: auto;
+		margin-top: -3em;
+
+		order: 3;
+		justify-content: space-between;
+		flex-basis: 54.5%;
+	}
+
+	.work-natali__use-span {
+		width: 5em;
 	}
 }

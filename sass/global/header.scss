@@ -14,7 +14,7 @@
 }
 
 .header__title1 {
-	padding: 6.7em 0 2em;
+	padding: 50vh 0 2em;
 
 	color: $blue;
 	font-size: 2em;
@@ -52,8 +52,48 @@
 	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: $big-mob) {
+	.header {
+		background-position: bottom right;
+	}
+}
+
+@media (min-width: $tab) {
 	.header {
 		background-image: url("../img/gray-tab@1x.jpg");
+		background-position: center;
+	}
+
+	@media (min-resolution: 144dpi),
+	(min-resolution: 1.5dppx) {
+		.header {
+			background-image: url("../img/gray-tab@2x.jpg");
+		}
+	}
+}
+
+@media (min-width: $desk) {
+	.header {
+		background-image: url("../img/gray-desk@1x.jpg");
+	}
+
+	.header__title1 {
+		padding-top: 50vh;
+		padding-bottom: 5%;
+
+		font-size: 2.3em;
+	}
+
+	.header__title2 {
+		max-width: 1200px;
+		padding-right: 4vw;
+		margin: 5% auto;
+	}
+
+	@media (min-resolution: 144dpi),
+	(min-resolution: 1.5dppx) {
+		.header {
+			background-image: url("../img/gray-desk@2x.jpg");
+		}
 	}
 }

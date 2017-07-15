@@ -1,5 +1,6 @@
 .about-me {
-	padding-top: 10vh;
+	padding-top: 5em;
+	@include marg;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -13,7 +14,8 @@
 	height: 62vw;
 
 	overflow: hidden;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+	box-shadow:  0 0 10px rgba(0, 0, 0, 0.6);
 
 	&::after {
 		position: absolute;
@@ -36,7 +38,6 @@
 
 .about-me__wrap {
 	margin: 1em;
-	@include marg;
 }
 
 .about-me__text {
@@ -58,22 +59,58 @@
 	border-radius: 2px;
 }
 
-@media (min-width: $big-mob) {
-	.about-me {
-		padding-top: 12vw;
-	}
-}
-
 @media (min-width: $tab) {
+	.about-me {
+		padding-top: 4em;
+
+		display: block;
+	}
+
+	.about-me__wrap {
+		margin: 0 0 1em;
+
+		&::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
 	.about-me__photo-wrap {
-		max-width: 330px;
-		height: auto;
+		margin-right: 2em;
+		width: 330px;
+		height: 467px;
+
+		float: left;
+
+		&::after {
+			width: 330px;
+			height: 467px;
+		}
 	}
 
 	.about-me__text {
+
 		&--big {
 			padding-bottom: 0.5em;
+			padding-top: 0;
+
 			text-align: center;
 		}
+	}
+}
+
+@media (min-width: $desk) {
+	.about-me {
+		max-width: 1200px;
+	}
+
+	.about-me__photo-wrap {
+		width: 330px;
+		height: 467px;
+	}
+
+	.about-me__wrap {
+		flex: 1 1 52%;
 	}
 }
